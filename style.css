@@ -100,9 +100,9 @@ form.form{
     margin-bottom: 25px;
 }
 
-input.form-control, select.form-control {
+input.form-control, select.form-control, textarea.form-control {
     display: block;
-    width: 100%;
+    width: 100% !important;
     padding: 12px 16px;
     font-size: 16px;
     border-radius: 4px;
@@ -112,7 +112,7 @@ input.form-control, select.form-control {
             box-shadow: 0px 0px 5px 1px #ddd;
 }
 
-input.form-control:focus-visible, select.form-control:focus-visible {
+input.form-control:focus-visible, select.form-control:focus-visible, textarea.form-control:focus-visible {
     outline: none;
     border: 1px solid #07174b;
     -webkit-box-shadow: 0px 0px 1px 2px #06174d78;
@@ -133,13 +133,12 @@ p.error {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin-bottom: 20px;
     font-size: 14px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+    align-items: start;
 }
 .right-price {
     text-align: right;
@@ -185,6 +184,16 @@ p.error {
 .card-img{
     width: 200px;
     margin: auto;
+}
+.left-btn input.discount {
+    position: relative;
+}
+
+.left-btn input.discount:after {
+    content: "(Save $160.00 44%)";
+    position: absolute;
+    top: 15px;
+    left: 17px;
 }
 footer p{
     font-size: 12px;
