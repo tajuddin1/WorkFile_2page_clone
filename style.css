@@ -135,7 +135,7 @@ p.error {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-size: 14px;
     -webkit-box-align: start;
     align-items: start;
@@ -165,7 +165,7 @@ p.error {
 .checkOutBtn{
     font-weight: 600;
     color: white;
-    background-color: #078206;
+    background-color: #F37736;
     font-size: 18px;
     font-weight: 600;
     text-align: center;
